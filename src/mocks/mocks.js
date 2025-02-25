@@ -50,7 +50,12 @@ export const productCategoryProps = {
   categorySmallBottom,
 };
 
-export const products = [
+export const bestSellersProps = {
+  title: "best sellers",
+  subtitle: "these things are selling like hotcakes",
+};
+
+export const productsProps = [
   {
     image: {
       url: "https://terrathread.com/cdn/shop/products/blackcottontshirts.jpg?v=1684794379",

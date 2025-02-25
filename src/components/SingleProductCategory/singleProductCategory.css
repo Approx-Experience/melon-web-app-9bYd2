@@ -1,0 +1,24 @@
+.single-product-category-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.single-product-category-container img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  display: block;
+}
+
+.single-product-category-text {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  color: black;
+  background: #f0f0f0;
+  padding: 0px 30px;
+  margin: 0 0;
+  font-size: 1rem;
+}

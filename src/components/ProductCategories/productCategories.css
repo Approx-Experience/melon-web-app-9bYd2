@@ -1,0 +1,13 @@
+#product-categories-container {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#product-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#product-categories-small {
+  display: flex;
+  flex-direction: column;
+}

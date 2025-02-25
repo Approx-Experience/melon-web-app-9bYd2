@@ -1,5 +1,13 @@
 #best-sellers-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#best-sellers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

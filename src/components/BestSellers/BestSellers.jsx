@@ -14,7 +14,9 @@ const BestSellers = ({ productList, title, subtitle }) => {
         <h3>{title}</h3>
         <h6>{subtitle}</h6>
       </div>
-      {productListMapped}
+      <div id="best-sellers">
+        {productListMapped}
+      </div>
     </div>
   )
 }

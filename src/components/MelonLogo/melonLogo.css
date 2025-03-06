@@ -1,0 +1,42 @@
+.melonLogo-wrapper {
+  display: flex;
+
+}
+.melonLogo-wrapper span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #b83933;
+  font-size: 3rem;
+}
+
+.watermelon {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  background-color: #6da35f; /* Green rind */
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+}
+
+.rind {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  top: 0;
+  background-color: #f4e7d4; 
+  border-bottom-left-radius: 52px;
+  border-bottom-right-radius: 52px;
+}
+
+.flesh {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  top: 0;
+  background-color: #b83933; /* Red flesh */
+  border-bottom-left-radius: 44px;
+  border-bottom-right-radius: 44px;
+}

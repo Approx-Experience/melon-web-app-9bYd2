@@ -1,0 +1,14 @@
+.navbar-wrapper {
+  background-color: #f4e7d4;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.middle-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

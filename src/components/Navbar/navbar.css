@@ -1,14 +1,149 @@
+/* Navbar Wrapper */
 .navbar-wrapper {
   background-color: #f4e7d4;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+/* Dark Mode Toggle */
 .dark-mode-toggle {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  padding: 5px 0;
 }
 
+/* Middle Navigation */
 .middle-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 0;
+}
+
+.middle-nav section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Navigation Links */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+#hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    display: none;
+  }
+  
+  .middle-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .middle-nav section {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Ensure all icons, including MelonLogo, are the same size */
+  .middle-nav svg,
+  .middle-nav img,
+  .middle-nav .melonLogo-wrapper {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ❌ Hide text inside .middle-nav links (account, favorite, cart) */
+  .middle-nav .navlink span {
+    display: none;
+  }
+
+  /* ✅ Ensure nav links (new arrivals, men, etc.) keep their text */
+  nav .navlink span {
+    display: inline;
+  }
+
+  /* Make hamburger menu visible on mobile */
+  #hamburger-menu {
+    display: block;
+  }
+
+  /* Navigation (Initially Hidden) */
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f4e7d4;
+    padding: 10px 0;
+  }
+
+  /* Show nav when menu is open */
+  .nav-open {
+    display: flex;
+  }
+
+  /* Ensure nav Links stack vertically and have a height of 100px */
+  nav .navlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px; /* ✅ Fix: Each Link is 100px tall */
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* Extra Small Screens (≤480px) */
+@media (max-width: 480px) {
+  .navbar-wrapper {
+    padding: 5px 10px;
+  }
+
+  .middle-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middle-nav section {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Adjust MelonLogo position (text above the icon) */
+  .melonLogo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

@@ -3,6 +3,19 @@
   display: inline-block;
 }
 
+/* Hide input field in mobile view */
+@media (max-width: 768px) {
+  .input-wrapper input {
+    display: none;
+  }
+
+  .input-wrapper.expanded input {
+    display: block; /* Show input when expanded */
+    width: 150px; /* Adjust width for visibility */
+  }
+}
+
+/* Style for input */
 .input-wrapper input {
   padding-left: 30px;
   height: 36px;
@@ -10,14 +23,18 @@
   background-color: #f4e7d4;
   color: black;
   border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease-in-out;
 }
 
+/* Icon styling */
 .input-wrapper .icon {
   position: absolute;
   left: 8px;
   top: 50%;
-  transform: translateY(-120%);
-  pointer-events: none;
+  transform: translateY(-50%);
+  pointer-events: auto; /* Allow clicks */
   font-size: 16px;
   color: #888;
+  cursor: pointer;
 }

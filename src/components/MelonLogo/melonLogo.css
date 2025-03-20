@@ -13,7 +13,7 @@
   position: relative;
   width: 120px;
   height: 60px;
-  background-color: #6da35f; /* Green rind */
+  background-color: #6da35f;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   overflow: hidden;
@@ -36,7 +36,42 @@
   left: 16px;
   right: 16px;
   top: 0;
-  background-color: #b83933; /* Red flesh */
+  background-color: #b83933;
   border-bottom-left-radius: 44px;
   border-bottom-right-radius: 44px;
+}
+
+@media (max-width: 768px) {
+  .melonLogo-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .melonLogo-wrapper span {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .watermelon {
+    width: 40px;
+    height: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .rind {
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .flesh {
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
 }

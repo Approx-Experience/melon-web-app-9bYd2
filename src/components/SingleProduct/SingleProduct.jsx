@@ -1,5 +1,6 @@
 import './SingleProduct.css';
 
+// Task called Item Card Component
 const SingleProduct = ({ image, productTitle, price, stylesQty, isNewArrival }) => {
   return (
     <div id="single-product-content-area">
